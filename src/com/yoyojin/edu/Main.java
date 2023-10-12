@@ -1,7 +1,6 @@
 package com.yoyojin.edu;
 
 import com.yoyojin.edu.dice_game.Game;
-import com.yoyojin.edu.dice_game.idGenerator.IdGenerator;
 import com.yoyojin.edu.dice_game.idGenerator.IncrementIdGeneratorStrategy;
 import com.yoyojin.edu.dice_game.models.Dice;
 import com.yoyojin.edu.dice_game.models.player.Player;
@@ -13,10 +12,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        IdGenerator idGenerator = IncrementIdGeneratorStrategy.getInstance();
+        PlayerFactory playerFactory = new PlayerFactory(new IncrementIdGeneratorStrategy());
 
-        Player firstPlayer = new Player(idGenerator.generateId(), "Alex");
-        Player secondPlayer = new Player(idGenerator.generateId(), "Max");
+        Player firstPlayer = playerFactory.makePlayer("Alex");
+        Player secondPlayer = playerFactory.makePlayer("Max");
 
         List<Player> players = new ArrayList<>();
         players.add(firstPlayer);
