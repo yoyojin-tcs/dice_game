@@ -1,4 +1,4 @@
-package com.yoyojin.edu.dice_game.models;
+package com.yoyojin.edu.dice_game.models.player;
 
 public class Player {
     private final Long id;

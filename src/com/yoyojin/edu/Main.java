@@ -4,7 +4,8 @@ import com.yoyojin.edu.dice_game.Game;
 import com.yoyojin.edu.dice_game.idGenerator.IdGenerator;
 import com.yoyojin.edu.dice_game.idGenerator.IncrementIdGeneratorStrategy;
 import com.yoyojin.edu.dice_game.models.Dice;
-import com.yoyojin.edu.dice_game.models.Player;
+import com.yoyojin.edu.dice_game.models.player.Player;
+import com.yoyojin.edu.dice_game.models.player.PlayerFactory;
 import com.yoyojin.edu.dice_game.rules.DiceTotalValueWinStrategy;
 
 import java.util.ArrayList;
