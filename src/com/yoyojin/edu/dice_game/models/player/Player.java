@@ -5,7 +5,7 @@ public class Player {
     private final String name;
     private int score = 0;
 
-    public Player(Long id, String name) {
+    protected Player(Long id, String name) {
         if (id == null || id < 0) {
             throw new IllegalArgumentException("Id must be not null and non-negative!");
         }
