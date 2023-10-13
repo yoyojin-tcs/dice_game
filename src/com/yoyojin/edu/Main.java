@@ -14,8 +14,8 @@ public class Main {
     public static void main(String[] args) {
         PlayerFactory playerFactory = new PlayerFactory(new IncrementIdGeneratorStrategy());
 
-        Player firstPlayer = playerFactory.makePlayer("Alex");
-        Player secondPlayer = playerFactory.makePlayer("Max");
+        Player firstPlayer = playerFactory.createPlayer("Alex");
+        Player secondPlayer = playerFactory.createPlayer("Max");
 
         List<Player> players = new ArrayList<>();
         players.add(firstPlayer);

@@ -1,5 +1,7 @@
 package com.yoyojin.edu.dice_game.idGenerator;
 
+import java.util.Objects;
+
 public class IncrementIdGeneratorStrategy implements IdGenerator {
     private Long currentId;
 
@@ -7,6 +9,7 @@ public class IncrementIdGeneratorStrategy implements IdGenerator {
     }
 
     public IncrementIdGeneratorStrategy(Long initId) {
+        Objects.requireNonNull(initId);
         this.currentId = initId;
     }
 
