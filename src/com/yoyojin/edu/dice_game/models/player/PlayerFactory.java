@@ -13,7 +13,9 @@ public class PlayerFactory {
     }
 
     public Player createPlayer(final String name) {
-        Objects.requireNonNull(name);
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException("Bad name argument");
+        }
         return new Player(idGenerator.generateId(), name);
     }
 }
