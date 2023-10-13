@@ -5,7 +5,7 @@ public class Player {
     private final String name;
     private int score = 0;
 
-    protected Player(Long id, String name) {
+    Player(Long id, String name) {
         this.id = id;
         this.name = name;
     }
