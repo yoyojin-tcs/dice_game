@@ -2,7 +2,7 @@ package com.yoyojin.edu.dice_game;
 
 import com.yoyojin.edu.dice_game.exceptions.MoreThanOneWinnerException;
 import com.yoyojin.edu.dice_game.models.Dice;
-import com.yoyojin.edu.dice_game.models.Player;
+import com.yoyojin.edu.dice_game.models.player.Player;
 import com.yoyojin.edu.dice_game.rules.WinRule;
 
 import java.util.List;
